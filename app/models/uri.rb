@@ -18,7 +18,7 @@ class Uri < ApplicationRecord
 
     def get_shorten_uri
         hash = Hash.new(0)
-        hash["shorten-uri"] = "http://localhost:8000/#{self.shorten_uri}"
+        hash["shorten-uri"] = "http://localhost:8000/?shorten_uri=#{self.shorten_uri}"
         hash
     end 
 end
